@@ -1,21 +1,8 @@
-# my-project
+# vue+element管理后台
+## 运行：
+1. 安装依赖npm install 
+2. 运行：npm run dev
+3. 编译：npm run build
 
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 备注
+还在开发中，有部分组件可以使用，待更新
