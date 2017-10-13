@@ -10,11 +10,9 @@ import pageQuiNav from '../pages/pageQuiNav.vue'
 import nav_aside from '../pages/nav/nav_aside.vue'
 
 // 引入子路由页面
-import Blog from '../pages/page.vue'
 import music from '../pages/music/index.vue'
-import page1 from '../pages/page1.vue'
-import page2 from '../pages/page2.vue'
 import icon from '../pages/icon/index.vue'
+import example from '../pages/icon/demo_fontclass.vue'
 
 Vue.use(Router)
 
@@ -33,8 +31,19 @@ export default new Router({
     {
       path: '/icon',
       name: 'icon',
-      component: icon
+      component: icon,
+      children:[
+        {path: 'example',
+        name: 'example',
+        component: example,}
+      ],
     },
+    // {
+    //   path: '/icon/example',
+    //   name: 'example',
+    //   component: example,
+    //   children:[],
+    // },
     {
       path: '/music',
       name: 'music',
@@ -51,20 +60,20 @@ export default new Router({
       name: 'nav',
       component: nav_aside
     },
-    {
-      path: '/blog',
-      name: 'blog',
-      component: Blog,
-      children: [
-        {
-          path: '/',
-          component: page1
-        },
-        {
-          path: 'info',
-          component: page2
-        }
-      ]
-    }
+    // {
+    //   path: '/blog',
+    //   name: 'blog',
+    //   component: Blog,
+    //   children: [
+    //     {
+    //       path: '/',
+    //       component: page1
+    //     },
+    //     {
+    //       path: 'info',
+    //       component: page2
+    //     }
+    //   ]
+    // }
   ]
 })

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="icon">
     <el-form :model="searchForm" :inline="true" :rules="rulesSearch" ref="searchForm" label-width="100px" >
         <el-form-item prop="name" label="图标名称：">
             <el-input size="small" v-model="searchForm.name" placeholder="请输入图标名字" >
@@ -53,11 +53,6 @@
         <el-form-item v-if="searchForm.type === 'fontclass'" prop="color" label="图标颜色：" >
             <el-color-picker size="small" v-model="searchForm.color" show-alpha></el-color-picker>
         </el-form-item>
-        <!-- <el-form-item>
-            <el-button size="small" type="warning">
-                搜索
-            </el-button>
-        </el-form-item> -->
     </el-form>    
     <el-card >
         <cl-icon v-if="searchForm.type === 'symbol'" :name="searchForm.name"  :type="searchForm.type" :sizesvg="searchForm.sizesvg"></cl-icon>
@@ -72,26 +67,45 @@
                 </pre>   
             </span>
         </div>
-    </el-card>
-
+    </el-card>  
+    <router-link :to="url" >查看全部图标</router-link>
+    <div v-show="show">
+        <router-view ></router-view>
+    </div>
   </div>
 </template>
 
 <script>
     // import CLIcon from '../../components/icon/icon.vue'
     export default {
+        name:'icon',
             data:function(){
                 return {
+                    show:true ,
                     searchForm:{
                         name:'',
                         type:'fontclass',
-                        color:'#000',
-                        // color:'',
+                        color:'rgba(0,0,0,1)',
                         size:'normal',
                         sizesvg:'normalsvg',
                     },
                     rulesSearch:{},
                 }
             },
+            methods:{
+                showdiv(){
+                    this.show =( this.show == false ? true :false) ;
+                    console.log(this.show);
+                }
+            },
+            computed:{
+                url:function(){
+                    var  ourl = '/icon/example' ;  
+                               
+                    return ourl ;
+                
+                    }
+            }
   }
+
 </script>
