@@ -19,7 +19,9 @@ export default{
         }
     },
     filters:{
-
+        formatMoney(val){
+            return "￥" + val.toFixed(2)  ;  //这种精度一定要后端做，前端处理会有数据丢失
+        },
     },
     mounted:function(){
         this.$nextTick(function(){
