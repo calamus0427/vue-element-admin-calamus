@@ -12,6 +12,8 @@ import search from '../pages/search/search_input.vue'
 import music from '../pages/music/index.vue'
 import icon from '../pages/icon/index.vue'
 import todoList from '../pages/todoList/index.vue'
+import shop from '../pages/shop/index.vue'
+
 
 // 引入子路由页面
 import example from '../pages/icon/demo_fontclass.vue'
@@ -29,6 +31,11 @@ export default new Router({
       path: '/todoList',
       name: 'todoList',
       component: todoList
+    },
+    {
+      path: '/shop',
+      name: 'shop',
+      component: shop
     },
     {
       path: '/btn',

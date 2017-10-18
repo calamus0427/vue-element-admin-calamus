@@ -9,7 +9,8 @@
   <router-link to="/music">音乐播放器</router-link>  
   <router-link to="/icon">图标</router-link>
   <router-link to="/search">搜索框</router-link> 
-  <router-link to="/todoList">todoList</router-link>   
+  <router-link to="/todoList">todoList</router-link>
+  <router-link to="/shop">购物车</router-link>        
   <a @click="getMockData()">mock</a> 
 </div>
 </template>
