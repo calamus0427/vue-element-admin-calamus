@@ -63,6 +63,8 @@ app.use(hotMiddleware)
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
+app.use('/mock',express.static('./mock'))
+
 var uri = 'http://localhost:' + port
 
 var _resolve

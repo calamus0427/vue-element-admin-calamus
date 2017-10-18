@@ -8,10 +8,12 @@ import pageQuiButton from '../pages/pageQuiButton.vue'
 import pageQuiList from '../pages/pageQuiList.vue'
 import pageQuiNav from '../pages/pageQuiNav.vue'
 import nav_aside from '../pages/nav/nav_aside.vue'
-
-// 引入子路由页面
+import search from '../pages/search/search_input.vue'
 import music from '../pages/music/index.vue'
 import icon from '../pages/icon/index.vue'
+import todoList from '../pages/todoList/index.vue'
+
+// 引入子路由页面
 import example from '../pages/icon/demo_fontclass.vue'
 
 Vue.use(Router)
@@ -24,9 +26,19 @@ export default new Router({
       component: index
     },
     {
+      path: '/todoList',
+      name: 'todoList',
+      component: todoList
+    },
+    {
       path: '/btn',
       name: 'btn',
       component: pageQuiButton
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: search
     },
     {
       path: '/icon',

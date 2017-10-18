@@ -10,14 +10,22 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 import axios from 'axios'
+Vue.prototype.$http = axios
 
 import Vuex from 'vuex'
 import store from './vuex/store'
+
+import Mock from 'mockjs';
+
 
 //自定义图标
 import './components/icon/font/iconfont.css'
 import './components/icon/font/iconfont.js'
 import './components/icon/icon.js'  //icon
+
+//自定义搜索组件
+import './components/search/search_input.js'  //icon
+
 
 
 //关闭生产过程中的提示
@@ -26,6 +34,7 @@ Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(Vuex)
 Vue.use(VueRouter)
+
 
 
 
