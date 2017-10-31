@@ -18,12 +18,13 @@ import store from './vuex/store'
 import Mock from 'mockjs';
 
 
-//自定义图标
+//图标组件
 import './components/icon/font/iconfont.css'
 import './components/icon/font/iconfont.js'
 import './components/icon/icon.js'  //icon
-
-//自定义搜索组件
+//对话框组件
+import './components/talk/talk.js'  //talk
+//搜索组件
 import './components/search/search_input.js'  //icon
 
 

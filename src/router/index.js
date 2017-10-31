@@ -13,6 +13,7 @@ import music from '../pages/music/index.vue'
 import icon from '../pages/icon/index.vue'
 import todoList from '../pages/todoList/index.vue'
 import shop from '../pages/shop/index.vue'
+import ten from '../pages/gal/ten.vue'
 
 
 // 引入子路由页面
@@ -31,6 +32,11 @@ export default new Router({
       path: '/todoList',
       name: 'todoList',
       component: todoList
+    },
+    {
+      path: '/ten',
+      name: 'ten',
+      component: ten
     },
     {
       path: '/shop',
