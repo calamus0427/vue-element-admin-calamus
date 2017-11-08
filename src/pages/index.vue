@@ -1,7 +1,8 @@
 
 <template>
 <div>
-  <ul>
+  <cl-canvasBg :dotsNum="60" :isColor="true"></cl-canvasBg>
+  <ul class="nav">
     <li>
         <router-link to="/">主页</router-link>
     </li>
@@ -43,6 +44,9 @@
 </template>
 
 <style scoped>
+.nav{
+  background-color:rgba(255,255,255,0.5);
+}
 ul li{
   list-style:none;
   text-decoration:none;

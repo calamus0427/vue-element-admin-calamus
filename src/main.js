@@ -26,6 +26,7 @@ import './components/icon/icon.js'  //icon
 import './components/talk/talk.js'  //talk
 //搜索组件
 import './components/search/search_input.js'  //icon
+import './components/canvas/canvas.js'
 
 
 
