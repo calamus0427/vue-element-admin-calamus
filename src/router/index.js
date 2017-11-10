@@ -14,6 +14,8 @@ import icon from '../pages/icon/index.vue'
 import todoList from '../pages/todoList/index.vue'
 import shop from '../pages/shop/index.vue'
 import ten from '../pages/gal/ten.vue'
+import login from "../pages/login/login.vue";
+
 
 
 // 引入子路由页面
@@ -27,6 +29,11 @@ export default new Router({
       path: '/',
       name: 'index',
       component: index
+    },
+    {
+      path: "/login",
+      name: 'login',
+      component: login
     },
     {
       path: '/todoList',

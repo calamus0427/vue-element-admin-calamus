@@ -25,8 +25,11 @@ import './components/icon/icon.js'  //icon
 //对话框组件
 import './components/talk/talk.js'  //talk
 //搜索组件
-import './components/search/search_input.js'  //icon
+import './components/search/search_input.js'
+//canvas组件
 import './components/canvas/canvas.js'
+//登录组件
+import "./components/login/login.js";
 
 
 

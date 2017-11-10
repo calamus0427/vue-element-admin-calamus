@@ -37,6 +37,9 @@
       <router-link to="/ten">洛天依--十重幻想小游戏</router-link>
     </li>
     <li>
+      <router-link to="/login">登录</router-link>
+    </li>
+    <li>
       <a @click="getMockData()">mock</a>
     </li>
   </ul>
