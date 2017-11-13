@@ -1,7 +1,7 @@
 <template>
 <el-container>
-  <el-aside width="200px">
-    <el-menu class="nav_aside el-menu-vertical-demo"  theme="dark" mode="vertical" default-active="1-4-1"  @open="handleOpen" @close="handleClose" :collapse="isCollapse">
+  <el-aside :width="width">
+    <el-menu class="nav_aside el-menu-vertical-demo" mode="vertical" default-active="1-4-1"  @open="handleOpen" @close="handleClose" :collapse="isCollapse">
                     <el-submenu index="1">
                         <template slot="title">
                             <i class="el-icon-message"></i>
@@ -12,7 +12,9 @@
                             <span slot="title">分组一</span>
                             <el-menu-item  index="/todolist">
                             <router-link to="/todolist">todolist</router-link> </el-menu-item>
-                            <el-menu-item index="1-2">选项2</el-menu-item>
+                            <el-menu-item index="1-2">
+                              <router-link to="/music">音乐播放器</router-link>
+                            </el-menu-item>
                         </el-menu-item-group>
                         <el-menu-item-group title="分组2">
                             <el-menu-item index="1-3">选项3</el-menu-item>
@@ -68,7 +70,7 @@
       <el-row class="tabs">
         <el-breadcrumb separator="|">
           <el-breadcrumb-item :to="{ path: '/index' }">首页</el-breadcrumb-item>
-          <el-breadcrumb-item :to="{ path: '/todolist' }">todolist</el-breadcrumb-item>
+          <el-breadcrumb-item :to="{ path: '/todolist' }">项目页</el-breadcrumb-item>
             <el-breadcrumb-item style="float:right" :to="{ path: '/login' }">退出</el-breadcrumb-item>
         </el-breadcrumb>
       </el-row>
@@ -76,7 +78,7 @@
     <el-main>
       <router-view></router-view>
     </el-main>
-    <el-footer>Footer</el-footer>
+    <el-footer>@Calamus 2017</el-footer>
   </el-container>
 </el-container>
 
@@ -87,6 +89,17 @@ export default {
             data: function() {
                 return {
                     isCollapse: false,
+                    // width:'400px',
+                }
+            },
+            computed:{
+                width(){
+                  if(this.isCollapse){
+                      return '70px';
+                  }else{
+                    return '200px';
+                  }
+
                 }
             },
             methods:{
@@ -100,7 +113,10 @@ export default {
 }
 </script>
 
-<style  lang="scss">
+<style  lang="scss" scoped>
+a{
+  text-decoration: none;
+}
     .nav_aside{
        height:100vh ;
     };
@@ -125,5 +141,10 @@ export default {
     // margin-top: 10px;
     text-align: left;
 }
+.el-footer{
+  color:#7a7f8a;
+  font-size:14px;
+}
+
 
 </style>

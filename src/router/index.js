@@ -40,11 +40,6 @@ export default new Router({
       name: 'login',
       component: login
     },
-    // {
-    //   path: '/todoList',
-    //   name: 'todoList',
-    //   component: todoList
-    // },
     {
       path: '/ten',
       name: 'ten',
@@ -72,7 +67,8 @@ export default new Router({
       children:[
         {path: 'example',
         name: 'example',
-        component: example,}
+        component: example},
+
       ],
     },
     // {
@@ -81,12 +77,12 @@ export default new Router({
     //   component: example,
     //   children:[],
     // },
-    {
-      path: '/music',
-      name: 'music',
-      component: music,
-      children:[],
-    },
+    // {
+    //   path: '/music',
+    //   name: 'music',
+    //   component: music,
+    //   children:[],
+    // },
     {
       path: '/list',
       name: 'list',
@@ -100,7 +96,10 @@ export default new Router({
         path:'/todolist',
         name:'todolist',
         component:todoList,
-      }]
+      },
+      {path: '/music',
+      name: 'music',
+      component: music}]
     },
     // {
     //   path: '/blog',
