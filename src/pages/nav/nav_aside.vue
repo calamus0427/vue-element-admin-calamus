@@ -71,7 +71,7 @@
         <el-breadcrumb separator="|">
           <el-breadcrumb-item :to="{ path: '/index' }">首页</el-breadcrumb-item>
           <el-breadcrumb-item :to="{ path: '/todolist' }">项目页</el-breadcrumb-item>
-            <el-breadcrumb-item style="float:right" :to="{ path: '/login' }">退出</el-breadcrumb-item>
+            <el-breadcrumb-item class="logup" :to="{ path: '/login' }">退出</el-breadcrumb-item>
         </el-breadcrumb>
       </el-row>
       </el-header>
@@ -144,6 +144,11 @@ a{
 .el-footer{
   color:#7a7f8a;
   font-size:14px;
+}
+.logup{
+  float: right;
+  cursor: pointer;
+  font-weight:bold;
 }
 
 
