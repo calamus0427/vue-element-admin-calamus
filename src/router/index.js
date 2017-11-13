@@ -40,11 +40,11 @@ export default new Router({
       name: 'login',
       component: login
     },
-    {
-      path: '/todoList',
-      name: 'todoList',
-      component: todoList
-    },
+    // {
+    //   path: '/todoList',
+    //   name: 'todoList',
+    //   component: todoList
+    // },
     {
       path: '/ten',
       name: 'ten',
@@ -95,7 +95,12 @@ export default new Router({
     {
       path: '/nav',
       name: 'nav',
-      component: nav_aside
+      component: nav_aside,
+      children:[{
+        path:'/todolist',
+        name:'todolist',
+        component:todoList,
+      }]
     },
     // {
     //   path: '/blog',

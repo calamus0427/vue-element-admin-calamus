@@ -1,15 +1,17 @@
 <template>
-<el-row >
-    <el-col :span="3" >
-        <el-menu class="nav_aside el-menu-vertical-demo"  theme="dark" mode="vertical" default-active="1-4-1"  @open="handleOpen" @close="handleClose" :collapse="isCollapse">
+<el-container>
+  <el-aside width="200px">
+    <el-menu class="nav_aside el-menu-vertical-demo"  theme="dark" mode="vertical" default-active="1-4-1"  @open="handleOpen" @close="handleClose" :collapse="isCollapse">
                     <el-submenu index="1">
                         <template slot="title">
                             <i class="el-icon-message"></i>
-                            <span slot="title">导航一</span>
+                            <span slot="title">
+                              导航一</span>
                           </template>
                         <el-menu-item-group>
                             <span slot="title">分组一</span>
-                            <el-menu-item index="1-1">选项1</el-menu-item>
+                            <el-menu-item  index="/todolist">
+                            <router-link to="/todolist">todolist</router-link> </el-menu-item>
                             <el-menu-item index="1-2">选项2</el-menu-item>
                         </el-menu-item-group>
                         <el-menu-item-group title="分组2">
@@ -57,9 +59,27 @@
                         </el-submenu>
                     </el-submenu>
                 </el-menu>
-    </el-col>
-</el-row>
-  
+    </el-aside>
+  <el-container>
+    <el-header>
+      <el-row class="isCollapse">
+        <el-button icon="el-icon-menu" type="primary" plain size="mini" @click="isCollapse = !isCollapse"></el-button>
+      </el-row>
+      <el-row class="tabs">
+        <el-breadcrumb separator="|">
+          <el-breadcrumb-item :to="{ path: '/index' }">首页</el-breadcrumb-item>
+          <el-breadcrumb-item :to="{ path: '/todolist' }">todolist</el-breadcrumb-item>
+            <el-breadcrumb-item style="float:right" :to="{ path: '/login' }">退出</el-breadcrumb-item>
+        </el-breadcrumb>
+      </el-row>
+      </el-header>
+    <el-main>
+      <router-view></router-view>
+    </el-main>
+    <el-footer>Footer</el-footer>
+  </el-container>
+</el-container>
+
 </template>
 
 <script>
@@ -84,5 +104,26 @@ export default {
     .nav_aside{
        height:100vh ;
     };
+    .el-submenu .el-menu-item {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 45px;
+    min-width: 180px;
+    }
+.el-header{
+  .el-row{
+    margin-top:10px;
+  }
+  .tabs{
+    // background-color:#dcdcdc;
+    padding-bottom:5px;
+    border-bottom:1px solid #dcdcdc ;
+  }
+
+}
+.isCollapse {
+    // margin-top: 10px;
+    text-align: left;
+}
 
 </style>
