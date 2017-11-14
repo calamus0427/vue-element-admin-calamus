@@ -1,66 +1,130 @@
 <template>
 <el-container>
   <el-aside :width="width">
-    <el-menu class="nav_aside el-menu-vertical-demo" mode="vertical" default-active="1-4-1"  @open="handleOpen" @close="handleClose" :collapse="isCollapse">
-                    <el-submenu index="1">
+    <el-menu class="nav_aside el-menu-vertical-demo"
+    mode="vertical"
+    default-active="index"
+    @open="handleOpen"
+    @close="handleClose"
+    :collapse="isCollapse"
+    :unique-opened="true"
+    :router="true">
+      <el-menu-item index="index">
+        <i class="el-icon-service"></i>
+        <span slot="title">首页</span>
+      </el-menu-item>
+                    <el-submenu index="2">
                         <template slot="title">
                             <i class="el-icon-message"></i>
                             <span slot="title">
-                              导航一</span>
-                          </template>
-                        <el-menu-item-group>
-                            <span slot="title">分组一</span>
-                            <el-menu-item  index="/todolist">
-                            <router-link to="/todolist">todolist</router-link> </el-menu-item>
-                            <el-menu-item index="1-2">
-                              <router-link to="/music">音乐播放器</router-link>
-                            </el-menu-item>
-                        </el-menu-item-group>
-                        <el-menu-item-group title="分组2">
-                            <el-menu-item index="1-3">选项3</el-menu-item>
-                        </el-menu-item-group>
-                        <el-submenu index="1-4">
-                            <span slot="title">选项4</span>
-                            <el-menu-item index="1-4-1">选项1</el-menu-item>
-                        </el-submenu>
-                    </el-submenu>
-                    <el-submenu index="2">
-                        <template slot="title">
-                                    <i class="el-icon-star-off"></i>
-                                    <span slot="title">导航二</span>
+                              基础组件</span>
                         </template>
-                        <el-menu-item-group>
-                            <span slot="title">分组一</span>
-                            <el-menu-item index="2-1">选项1</el-menu-item>
-                            <el-menu-item index="2-2">选项2</el-menu-item>
-                        </el-menu-item-group>
-                        <el-menu-item-group title="分组2">
-                            <el-menu-item index="2-3">选项3</el-menu-item>
-                        </el-menu-item-group>
-                        <el-submenu index="2-4">
-                            <span slot="title">选项4</span>
-                            <el-menu-item index="2-4-1">选项1</el-menu-item>
+                        <el-menu-item index="1-3">画廊</el-menu-item>
+                        <el-menu-item index="music">音乐播放器</el-menu-item>
+                        <el-menu-item index="video">视频播放器</el-menu-item>
+                        <el-submenu index="1-4">
+                            <span slot="title">基本组件</span>
+                            <el-menu-item index="1-4-1">轮播图</el-menu-item>
+                            <el-menu-item index="todolist">todolist</el-menu-item>
+                            <el-menu-item index="todolist">星级评分</el-menu-item>
+                            <el-menu-item index="todolist">进度条</el-menu-item>
+                            <el-menu-item index="todolist">时间选择器</el-menu-item>
+                            <el-menu-item index="todolist">返回顶部</el-menu-item>
+                            <el-menu-item index="todolist">权限</el-menu-item>
+                            <el-menu-item index="todolist">标记</el-menu-item>
+                        </el-submenu>
+                        <el-submenu index="1-4">
+                            <span slot="title">ICON</span>
+                            <el-menu-item index="1-4-1">ICON库</el-menu-item>
+                            <el-menu-item index="1-4-1">ICON组件</el-menu-item>
+                        </el-submenu>
+                        <el-submenu index="1-4">
+                            <span slot="title">Table</span>
+                            <el-menu-item index="1-4-1">Table</el-menu-item>
+                            <el-menu-item index="1-4-1">分页</el-menu-item>
+                        </el-submenu>
+                        <el-submenu index="1-4">
+                            <span slot="title">Form</span>
+                            <el-menu-item index="1-4-1">Form</el-menu-item>
+                        </el-submenu>
+                        <el-submenu index="1-4">
+                            <span slot="title">文本编辑器</span>
+                            <el-menu-item index="1-4-1">富文本编辑器</el-menu-item>
+                            <el-menu-item index="1-4-1">Markdown编辑器</el-menu-item>
+                            <el-menu-item index="1-4-1">Json编辑器</el-menu-item>
+                        </el-submenu>
+                        <el-submenu index="1-4">
+                            <span slot="title">背景</span>
+                            <el-menu-item index="1-4-1">知乎canvas背景</el-menu-item>
+                            <el-menu-item index="1-4-1">樱花飘落背景</el-menu-item>
+                            <el-menu-item index="1-4-1">雪花背景</el-menu-item>
+                            <el-menu-item index="1-4-1">星星闪烁背景</el-menu-item>
                         </el-submenu>
                     </el-submenu>
                     <el-submenu index="3">
                         <template slot="title">
-                                    <i class="el-icon-star-on"></i>
-                                    <span slot="title">导航三</span>
+                                    <i class="el-icon-star-off"></i>
+                                    <span slot="title">组件综合应用</span>
                         </template>
-                        <el-menu-item-group>
-                            <span slot="title">分组一</span>
-                            <el-menu-item index="3-1">选项1</el-menu-item>
-                            <el-menu-item index="3-2">选项2</el-menu-item>
-                        </el-menu-item-group>
-                        <el-menu-item-group title="分组2">
-                            <el-menu-item index="3-3">选项3</el-menu-item>
-                        </el-menu-item-group>
-                        <el-submenu index="3-4">
-                            <span slot="title">选项4</span>
-                            <el-menu-item index="3-4-1">选项1</el-menu-item>
+                        <el-menu-item index="1-3">画廊</el-menu-item>
+                        <el-menu-item index="1-3">音乐播放器</el-menu-item>
+                        <el-menu-item index="1-3">视频播放器</el-menu-item>
+                        <el-menu-item index="1-3">Vue-PPT入门介绍</el-menu-item>
+                        <el-menu-item index="1-3">Vue项目基础表单</el-menu-item>
+                        <el-submenu index="1-5">
+                            <span slot="title">小游戏</span>
+                            <el-menu-item index="2-1">十重妄想</el-menu-item>
+                            <el-menu-item index="2-2">选项2</el-menu-item>
+                            <el-menu-item index="2-2">选项2</el-menu-item>
+                            <el-menu-item index="2-2">选项2</el-menu-item>
+                            <el-menu-item index="2-2">选项2</el-menu-item>
+
+                        </el-submenu>
+
+                    </el-submenu>
+                    <el-submenu index="4">
+                        <template slot="title">
+                                    <i class="el-icon-star-on"></i>
+                                    <span slot="title">其他插件应用</span>
+                        </template>
+                        <el-submenu index="1-5">
+                            <span slot="title">Echarts</span>
+                            <el-menu-item index="2-1">介绍</el-menu-item>
+                            <el-menu-item index="2-2">柱状图</el-menu-item>
+                            <el-menu-item index="2-2">饼状图</el-menu-item>
+                            <el-menu-item index="2-2">选项2</el-menu-item>
+                            <el-menu-item index="2-2">选项2</el-menu-item>
+
+                        </el-submenu>
+                        <el-submenu index="1-5">
+                            <span slot="title">mock</span>
+                            <el-menu-item index="2-1">十重妄想</el-menu-item>
+                        </el-submenu>
+                        <el-submenu index="1-5">
+                            <span slot="title">Vue-markdown</span>
+                            <el-menu-item index="2-2">选项2</el-menu-item>
                         </el-submenu>
                     </el-submenu>
+                    <el-submenu index="5">
+                        <template slot="title">
+                                    <i class="el-icon-star-on"></i>
+                                    <span slot="title">错误页面</span>
+                        </template>
+                        <el-menu-item-group>
+                            <el-menu-item index="Code404">404页面</el-menu-item>
+                            <el-menu-item index="Code500">500页面</el-menu-item>
+                        </el-menu-item-group>
+                    </el-submenu>
+                    <el-menu-item index="6">
+                      <i class="el-icon-service"></i>
+                      <span slot="title">换肤</span>
+                    </el-menu-item>
+                    <el-menu-item index="7">
+                      <i class="el-icon-service"></i>
+                      <span slot="title">后期计划</span>
+                    </el-menu-item>
                 </el-menu>
+
     </el-aside>
   <el-container>
     <el-header>
@@ -89,7 +153,6 @@ export default {
             data: function() {
                 return {
                     isCollapse: false,
-                    // width:'400px',
                 }
             },
             computed:{
@@ -97,7 +160,7 @@ export default {
                   if(this.isCollapse){
                       return '70px';
                   }else{
-                    return '200px';
+                    return '219px';
                   }
 
                 }
@@ -137,6 +200,10 @@ a{
   }
 
 }
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+    width: 200px;
+    min-height: 400px;
+  }
 .isCollapse {
     // margin-top: 10px;
     text-align: left;
