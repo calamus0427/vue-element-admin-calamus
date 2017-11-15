@@ -13,7 +13,7 @@
         <router-link to="/list">列表</router-link>
     </li>
     <li>
-      <router-link to="/nav">侧边栏</router-link>
+      <router-link to="/nav">element管理后台</router-link>
     </li>
     <li>
       <router-link to="/blog">博客</router-link>
