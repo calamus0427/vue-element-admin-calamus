@@ -14,7 +14,8 @@ import icon from '../pages/icon/index.vue'
 import todoList from '../pages/todoList/index.vue'
 import shop from '../pages/shop/index.vue'
 import ten from '../pages/gal/ten.vue'
-import login from "../pages/login/login.vue";
+import login from "../pages/login/login.vue"
+import Code404 from "../pages/Code404/Code404"
 
 
 
@@ -99,22 +100,17 @@ export default new Router({
       },
       {path: '/music',
       name: 'music',
-      component: music}]
+      component: music},
+    {
+      path: '/Code404',
+      name: 'Code404',
+      component: Code404
+    },]
     },
-    // {
-    //   path: '/blog',
-    //   name: 'blog',
-    //   component: Blog,
-    //   children: [
-    //     {
-    //       path: '/',
-    //       component: page1
-    //     },
-    //     {
-    //       path: 'info',
-    //       component: page2
-    //     }
-    //   ]
-    // }
+
+    {
+      path: "*",
+      redirect: "/Code404"
+    }
   ]
 })

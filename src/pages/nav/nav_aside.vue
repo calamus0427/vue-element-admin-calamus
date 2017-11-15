@@ -9,119 +9,293 @@
     :collapse="isCollapse"
     :unique-opened="true"
     :router="true">
-      <el-menu-item index="index">
-        <i class="el-icon-service"></i>
+      <el-menu-item index="introduce">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#cl-icon-Mousse"></use>
+        </svg>
         <span slot="title">首页</span>
       </el-menu-item>
+                    <el-submenu index="1">
+                        <template slot="title">
+
+                            <span slot="title">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-API"></use>
+                              </svg>
+                              组件及API
+                            </span>
+                        </template>
+                        <el-submenu index="1-1">
+                            <span slot="title">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-jiatingyijianchongzhi"></use>
+                              </svg>
+                              基本组件
+                            </span>
+                            <el-menu-item index="Carousel">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-suanzhang"></use>
+                              </svg>轮播图
+                            </el-menu-item>
+                            <el-menu-item index="todolist">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-qinqin"></use>
+                              </svg>
+                                todolist
+                            </el-menu-item>
+                            <el-menu-item index="icon">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-keai"></use>
+                              </svg>ICON
+                            </el-menu-item>
+                            <el-menu-item index="table">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-deyi"></use>
+                              </svg>
+                              Table
+                            </el-menu-item>
+                            <el-menu-item index="form">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-ku"></use>
+                              </svg>
+                              Form
+                            </el-menu-item>
+                            <el-menu-item index="StarRating">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-daku"></use>
+                              </svg>
+                              星级评分
+                            </el-menu-item>
+                            <el-menu-item index="process">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-gongxifacai"></use>
+                              </svg>
+                              进度条
+                            </el-menu-item>
+                            <el-menu-item index="dataPiker">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-han"></use>
+                              </svg>
+                              时间选择器
+                            </el-menu-item>
+                            <el-menu-item index="backToTop">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-xiaoer"></use>
+                              </svg>
+                              返回顶部
+                            </el-menu-item>
+                            <el-menu-item index="permission">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-caimi"></use>
+                              </svg>
+                              权限
+                            </el-menu-item>
+                            <el-menu-item index="mark">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-haixiu"></use>
+                              </svg>
+                              标记
+                            </el-menu-item>
+                            <el-menu-item index="background">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-meiqianliao"></use>
+                              </svg>
+                              动态背景
+                            </el-menu-item>
+                        </el-submenu>
+                        <el-submenu index="1-2">
+                            <span slot="title">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-tushu1"></use>
+                              </svg>
+                              文本编辑器
+                            </span>
+                            <el-menu-item index="richEditor">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-saodi"></use>
+                              </svg>
+                              富文本编辑器
+                            </el-menu-item>
+                            <el-menu-item index="markdownEditor">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-ganhuo"></use>
+                              </svg>
+                              Markdown编辑器
+                            </el-menu-item>
+                            <el-menu-item index="jsonEditor">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-jiaoshu"></use>
+                              </svg>
+                              Json编辑器
+                            </el-menu-item>
+                        </el-submenu>
+                    </el-submenu>
                     <el-submenu index="2">
                         <template slot="title">
-                            <i class="el-icon-message"></i>
-                            <span slot="title">
-                              基础组件</span>
+                                    <span slot="title">
+                                      <svg class="icon" aria-hidden="true">
+                                          <use xlink:href="#cl-icon-xiugaicelve"></use>
+                                      </svg>
+                                      组件综合应用
+                                    </span>
                         </template>
-                        <el-menu-item index="1-3">画廊</el-menu-item>
-                        <el-menu-item index="music">音乐播放器</el-menu-item>
-                        <el-menu-item index="video">视频播放器</el-menu-item>
-                        <el-submenu index="1-4">
-                            <span slot="title">基本组件</span>
-                            <el-menu-item index="1-4-1">轮播图</el-menu-item>
-                            <el-menu-item index="todolist">todolist</el-menu-item>
-                            <el-menu-item index="todolist">星级评分</el-menu-item>
-                            <el-menu-item index="todolist">进度条</el-menu-item>
-                            <el-menu-item index="todolist">时间选择器</el-menu-item>
-                            <el-menu-item index="todolist">返回顶部</el-menu-item>
-                            <el-menu-item index="todolist">权限</el-menu-item>
-                            <el-menu-item index="todolist">标记</el-menu-item>
+                        <el-menu-item index="gallery">
+                          <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#cl-icon-xiangji4"></use>
+                          </svg>
+                          画廊
+                        </el-menu-item>
+                        <el-menu-item index="music">
+                          <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#cl-icon-luyin1"></use>
+                          </svg>
+                          音乐播放器
+                          </el-menu-item>
+                        <el-menu-item index="video">
+                          <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#cl-icon-shipinzhongxin"></use>
+                          </svg>
+                          视频播放器
+                        </el-menu-item>
+                        <el-menu-item index="vuePpt">
+                          <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#cl-icon-ppt"></use>
+                          </svg>
+                          Vue-PPT入门介绍
+                        </el-menu-item>
+                        <el-menu-item index="vueForm">
+                          <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#cl-icon-word"></use>
+                          </svg>
+                          Vue项目基础表单
+                        </el-menu-item>
+                        <el-submenu index="2-1">
+                            <span slot="title">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-youxi1"></use>
+                              </svg>
+                              小游戏
+                            </span>
+                            <el-menu-item index="game">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-Sodawater"></use>
+                              </svg>
+                              介绍
+                            </el-menu-item>
                         </el-submenu>
-                        <el-submenu index="1-4">
-                            <span slot="title">ICON</span>
-                            <el-menu-item index="1-4-1">ICON库</el-menu-item>
-                            <el-menu-item index="1-4-1">ICON组件</el-menu-item>
-                        </el-submenu>
-                        <el-submenu index="1-4">
-                            <span slot="title">Table</span>
-                            <el-menu-item index="1-4-1">Table</el-menu-item>
-                            <el-menu-item index="1-4-1">分页</el-menu-item>
-                        </el-submenu>
-                        <el-submenu index="1-4">
-                            <span slot="title">Form</span>
-                            <el-menu-item index="1-4-1">Form</el-menu-item>
-                        </el-submenu>
-                        <el-submenu index="1-4">
-                            <span slot="title">文本编辑器</span>
-                            <el-menu-item index="1-4-1">富文本编辑器</el-menu-item>
-                            <el-menu-item index="1-4-1">Markdown编辑器</el-menu-item>
-                            <el-menu-item index="1-4-1">Json编辑器</el-menu-item>
-                        </el-submenu>
-                        <el-submenu index="1-4">
-                            <span slot="title">背景</span>
-                            <el-menu-item index="1-4-1">知乎canvas背景</el-menu-item>
-                            <el-menu-item index="1-4-1">樱花飘落背景</el-menu-item>
-                            <el-menu-item index="1-4-1">雪花背景</el-menu-item>
-                            <el-menu-item index="1-4-1">星星闪烁背景</el-menu-item>
-                        </el-submenu>
+
                     </el-submenu>
                     <el-submenu index="3">
                         <template slot="title">
-                                    <i class="el-icon-star-off"></i>
-                                    <span slot="title">组件综合应用</span>
+                          <span slot="title">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-shujushiti"></use>
+                              </svg>
+                              其他插件应用
+                          </span>
                         </template>
-                        <el-menu-item index="1-3">画廊</el-menu-item>
-                        <el-menu-item index="1-3">音乐播放器</el-menu-item>
-                        <el-menu-item index="1-3">视频播放器</el-menu-item>
-                        <el-menu-item index="1-3">Vue-PPT入门介绍</el-menu-item>
-                        <el-menu-item index="1-3">Vue项目基础表单</el-menu-item>
-                        <el-submenu index="1-5">
-                            <span slot="title">小游戏</span>
-                            <el-menu-item index="2-1">十重妄想</el-menu-item>
-                            <el-menu-item index="2-2">选项2</el-menu-item>
-                            <el-menu-item index="2-2">选项2</el-menu-item>
-                            <el-menu-item index="2-2">选项2</el-menu-item>
-                            <el-menu-item index="2-2">选项2</el-menu-item>
-
+                        <el-submenu index="3-1">
+                            <span slot="title">
+                              <svg class="icon" aria-hidden="true">
+                                  <use xlink:href="#cl-icon-zhuzhuangtu"></use>
+                                </svg>
+                                Echarts
+                              </span>
+                            <el-menu-item index="echartsInfo">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-bingzhuangtu"></use>
+                              </svg>
+                              介绍
+                            </el-menu-item>
+                            <el-menu-item index="echartsApp">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-shijieditu"></use>
+                              </svg>
+                              综合示例
+                            </el-menu-item>
                         </el-submenu>
-
+                        <el-submenu index="3-2">
+                            <span slot="title">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-jingyu"></use>
+                              </svg>
+                              mock
+                            </span>
+                            <el-menu-item index="mocl">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-xiongmao"></use>
+                              </svg>
+                              介绍
+                            </el-menu-item>
+                        </el-submenu>
+                        <el-submenu index="3-3">
+                            <span slot="title">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-huli"></use>
+                              </svg>
+                              Vue-markdown
+                            </span>
+                            <el-menu-item index="markdown">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-lu"></use>
+                              </svg>
+                              Markdown
+                            </el-menu-item>
+                        </el-submenu>
+                        <el-submenu index="3-4">
+                            <span slot="title">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-maotouying"></use>
+                              </svg>
+                              Vue-animation
+                            </span>
+                            <el-menu-item index="vueAnimation">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-lang"></use>
+                              </svg>
+                              Vue-animation
+                            </el-menu-item>
+                        </el-submenu>
                     </el-submenu>
                     <el-submenu index="4">
                         <template slot="title">
-                                    <i class="el-icon-star-on"></i>
-                                    <span slot="title">其他插件应用</span>
-                        </template>
-                        <el-submenu index="1-5">
-                            <span slot="title">Echarts</span>
-                            <el-menu-item index="2-1">介绍</el-menu-item>
-                            <el-menu-item index="2-2">柱状图</el-menu-item>
-                            <el-menu-item index="2-2">饼状图</el-menu-item>
-                            <el-menu-item index="2-2">选项2</el-menu-item>
-                            <el-menu-item index="2-2">选项2</el-menu-item>
-
-                        </el-submenu>
-                        <el-submenu index="1-5">
-                            <span slot="title">mock</span>
-                            <el-menu-item index="2-1">十重妄想</el-menu-item>
-                        </el-submenu>
-                        <el-submenu index="1-5">
-                            <span slot="title">Vue-markdown</span>
-                            <el-menu-item index="2-2">选项2</el-menu-item>
-                        </el-submenu>
-                    </el-submenu>
-                    <el-submenu index="5">
-                        <template slot="title">
-                                    <i class="el-icon-star-on"></i>
-                                    <span slot="title">错误页面</span>
+                          <span slot="title">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="#cl-icon-houtaiweihu"></use>
+                            </svg>
+                            错误页面
+                          </span>
                         </template>
                         <el-menu-item-group>
-                            <el-menu-item index="Code404">404页面</el-menu-item>
-                            <el-menu-item index="Code500">500页面</el-menu-item>
+                            <el-menu-item index="Code404">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-emoji-15"></use>
+                              </svg>
+                              404页面
+                            </el-menu-item>
+                            <el-menu-item index="Code500">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-emoji-29"></use>
+                              </svg>
+                              500页面
+                            </el-menu-item>
                         </el-menu-item-group>
                     </el-submenu>
-                    <el-menu-item index="6">
-                      <i class="el-icon-service"></i>
-                      <span slot="title">换肤</span>
+                    <el-menu-item index="background">
+                      <span slot="title">
+                        <svg class="icon" aria-hidden="true">
+                          <use xlink:href="#cl-icon-qunzi-copy-copy"></use>
+                        </svg>
+                        换肤
+                      </span>
                     </el-menu-item>
-                    <el-menu-item index="7">
-                      <i class="el-icon-service"></i>
-                      <span slot="title">后期计划</span>
+                    <el-menu-item index="after">
+                      <span slot="title">
+                        <svg class="icon" aria-hidden="true">
+                          <use xlink:href="#cl-icon-shenghuo"></use>
+                        </svg>
+                        后期计划
+                      </span>
                     </el-menu-item>
                 </el-menu>
 
@@ -179,6 +353,16 @@ export default {
 <style  lang="scss" scoped>
 a{
   text-decoration: none;
+}
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+.el-menu li {
+    list-style: none;
+    text-align: left;
 }
     .nav_aside{
        height:100vh ;

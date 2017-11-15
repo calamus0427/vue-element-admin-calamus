@@ -53,23 +53,25 @@
         <el-form-item v-if="searchForm.type === 'fontclass'" prop="color" label="图标颜色：" >
             <el-color-picker size="small" v-model="searchForm.color" show-alpha></el-color-picker>
         </el-form-item>
-    </el-form>    
+    </el-form>
     <el-card >
         <cl-icon v-if="searchForm.type === 'symbol'" :name="searchForm.name"  :type="searchForm.type" :sizesvg="searchForm.sizesvg"></cl-icon>
-        <cl-icon v-else :name="searchForm.name" :type="searchForm.type" :size="searchForm.size" :color="searchForm.color"></cl-icon>        
+        <cl-icon v-else :name="searchForm.name" :type="searchForm.type" :size="searchForm.size" :color="searchForm.color"></cl-icon>
         <div slot="header" class="clearfix">
             <span style="line-height: 36px;">
                 <pre v-if="searchForm.type === 'symbol'">
                     &lt;cl-icon name='{{searchForm.name}}' sizesvg='{{searchForm.sizesvg}}' type='{{searchForm.type}}'  &gt;&lt;cl-icon&gt;
-                </pre>  
+                </pre>
                 <pre v-else>
                     &lt;cl-icon name='{{searchForm.name}}' size='{{searchForm.size}}' type='{{searchForm.type}}' color='{{searchForm.color}}' &gt;&lt;cl-icon&gt;
-                </pre>   
+                </pre>
             </span>
         </div>
-    </el-card>  
-    <router-link :to="url" >查看全部图标</router-link>
-    <div v-show="show">
+    </el-card>
+    <router-link to="/icon">关闭</router-link>
+    <router-link :to="url">查看全部图标</router-link>
+
+    <div class="showAll">
         <router-view ></router-view>
     </div>
   </div>
@@ -100,12 +102,15 @@
             },
             computed:{
                 url:function(){
-                    var  ourl = '/icon/example' ;  
-                               
+                    var  ourl = '/icon/example' ;
+
                     return ourl ;
-                
+
                     }
             }
   }
 
 </script>
+<style lang="scss">
+</style>
+
