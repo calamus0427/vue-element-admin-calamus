@@ -294,14 +294,14 @@
 
     </el-aside>
   <el-container>
-    <el-header>
+    <el-header style="height:75px;">
       <el-row class="isCollapse">
         <el-button icon="el-icon-menu" type="primary" plain size="mini" @click="isCollapse = !isCollapse"></el-button>
       </el-row>
       <el-row class="tabs">
         <el-breadcrumb separator="|">
           <el-breadcrumb-item :to="{ path: '/index' }">首页</el-breadcrumb-item>
-          <el-breadcrumb-item :to="{ path: '/todolist' }">项目页</el-breadcrumb-item>
+          <el-breadcrumb-item :to="{ path: '/nav' }">项目页</el-breadcrumb-item>
             <el-breadcrumb-item class="logup" :to="{ path: '/login' }">退出</el-breadcrumb-item>
         </el-breadcrumb>
       </el-row>
@@ -354,6 +354,9 @@ a{
    vertical-align: -0.15em;
    fill: currentColor;
    overflow: hidden;
+}
+.el-main{
+  height:480px;
 }
 .el-menu li {
     list-style: none;
