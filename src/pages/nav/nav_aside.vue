@@ -307,7 +307,10 @@
       </el-row>
       </el-header>
     <el-main>
-      <router-view></router-view>
+      <div style="width:95%;margin:0 auto;">
+         <router-view></router-view>
+      </div>
+
     </el-main>
     <el-footer>
       <a href="https://github.com/calamus0427" target="_blank">@Calamus</a> 2017

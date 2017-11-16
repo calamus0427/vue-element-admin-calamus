@@ -4,15 +4,6 @@
   <cl-canvasBg :dotsNum="60" :isColor="true"></cl-canvasBg>
   <ul class="nav">
     <li>
-        <router-link to="/">主页</router-link>
-    </li>
-    <li>
-       <router-link to="/btn">按钮</router-link>
-    </li>
-    <li>
-        <router-link to="/list">列表</router-link>
-    </li>
-    <li>
       <router-link to="/nav">element管理后台</router-link>
     </li>
     <li>
@@ -25,10 +16,7 @@
        <router-link to="/icon">图标</router-link>
     </li>
     <li>
-      <router-link to="/search">搜索框</router-link>
-    </li>
-    <li>
-      <router-link to="/todoList">todoList</router-link>
+      <router-link to="/todolistShow">todoList</router-link>
     </li>
     <li>
       <router-link to="/shop">购物车</router-link>

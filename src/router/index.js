@@ -4,14 +4,10 @@ import Router from 'vue-router'
 
 // 引用页面模板->供路由使用
 import index from '../pages/index.vue'
-import pageQuiButton from '../pages/pageQuiButton.vue'
-import pageQuiList from '../pages/pageQuiList.vue'
-import pageQuiNav from '../pages/pageQuiNav.vue'
 import nav_aside from '../pages/nav/nav_aside.vue'
-import search from '../pages/search/search_input.vue'
 import music from '../pages/music/index.vue'
 import icon from '../pages/icon/index.vue'
-import todoList from '../pages/todoList/index.vue'
+import todolistShow from '../pages/todoList/index.vue'
 import shop from '../pages/shop/index.vue'
 import ten from '../pages/gal/ten.vue'
 import login from "../pages/login/login.vue"
@@ -44,6 +40,8 @@ import echartsApp from "../pages/echarts/example"
 import mockNav from "../pages/mock/index"
 import markdown from "../pages/markdown/index"
 import vueAnimation from "../pages/animation/index"
+import blog from "../pages/blog/index";
+
 
 
 
@@ -91,14 +89,13 @@ export default new Router({
       component: shop
     },
     {
-      path: '/btn',
-      name: 'btn',
-      component: pageQuiButton
-    },
-    {
-      path: '/search',
-      name: 'search',
-      component: search
+      path: '/blog',
+      name: 'blog',
+      component: blog
+    }, {
+      path: '/todolistShow',
+      name: 'todolistShow',
+      component: todolistShow
     },
     {
       path: '/icon',
@@ -111,23 +108,6 @@ export default new Router({
 
       ],
     },
-    // {
-    //   path: '/icon/example',
-    //   name: 'example',
-    //   component: example,
-    //   children:[],
-    // },
-    // {
-    //   path: '/music',
-    //   name: 'music',
-    //   component: music,
-    //   children:[],
-    // },
-    {
-      path: '/list',
-      name: 'list',
-      component: pageQuiList
-    },
     {
       path: '/nav',
       name: 'nav',
@@ -136,11 +116,6 @@ export default new Router({
         path:'/todolist',
         name:'todolist',
         component:todolist,
-      },
-      {
-        path:'/todoList',
-        name:'todoList',
-        component:todoList,
       },
       {path: '/music',
       name: 'music',
