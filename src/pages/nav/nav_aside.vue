@@ -17,12 +17,11 @@
       </el-menu-item>
                     <el-submenu index="1">
                         <template slot="title">
-
-                            <span slot="title">
                               <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#cl-icon-API"></use>
                               </svg>
-                              组件及API
+                              <span slot="title">
+                                组件及API
                             </span>
                         </template>
                         <el-submenu index="1-1">
@@ -43,7 +42,7 @@
                               </svg>
                                 todolist
                             </el-menu-item>
-                            <el-menu-item index="icon">
+                            <el-menu-item index="iconNav">
                               <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#cl-icon-keai"></use>
                               </svg>ICON
@@ -96,12 +95,6 @@
                               </svg>
                               标记
                             </el-menu-item>
-                            <el-menu-item index="background">
-                              <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-meiqianliao"></use>
-                              </svg>
-                              动态背景
-                            </el-menu-item>
                         </el-submenu>
                         <el-submenu index="1-2">
                             <span slot="title">
@@ -132,12 +125,12 @@
                     </el-submenu>
                     <el-submenu index="2">
                         <template slot="title">
-                                    <span slot="title">
-                                      <svg class="icon" aria-hidden="true">
-                                          <use xlink:href="#cl-icon-xiugaicelve"></use>
-                                      </svg>
-                                      组件综合应用
-                                    </span>
+                          <svg class="icon" aria-hidden="true">
+                              <use xlink:href="#cl-icon-xiugaicelve"></use>
+                          </svg>
+                          <span slot="title">
+                            组件综合应用
+                          </span>
                         </template>
                         <el-menu-item index="gallery">
                           <svg class="icon" aria-hidden="true">
@@ -163,7 +156,7 @@
                           </svg>
                           Vue-PPT入门介绍
                         </el-menu-item>
-                        <el-menu-item index="vueForm">
+                        <el-menu-item index="navTable">
                           <svg class="icon" aria-hidden="true">
                             <use xlink:href="#cl-icon-word"></use>
                           </svg>
@@ -187,10 +180,10 @@
                     </el-submenu>
                     <el-submenu index="3">
                         <template slot="title">
-                          <span slot="title">
                             <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#cl-icon-shujushiti"></use>
                               </svg>
+                              <span slot="title">
                               其他插件应用
                           </span>
                         </template>
@@ -221,7 +214,7 @@
                               </svg>
                               mock
                             </span>
-                            <el-menu-item index="mocl">
+                            <el-menu-item index="mockNav">
                               <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#cl-icon-xiongmao"></use>
                               </svg>
@@ -259,11 +252,11 @@
                     </el-submenu>
                     <el-submenu index="4">
                         <template slot="title">
-                          <span slot="title">
                             <svg class="icon" aria-hidden="true">
                               <use xlink:href="#cl-icon-houtaiweihu"></use>
                             </svg>
-                            错误页面
+                            <span slot="title">
+                              错误页面
                           </span>
                         </template>
                         <el-menu-item-group>
@@ -282,19 +275,19 @@
                         </el-menu-item-group>
                     </el-submenu>
                     <el-menu-item index="background">
-                      <span slot="title">
                         <svg class="icon" aria-hidden="true">
                           <use xlink:href="#cl-icon-qunzi-copy-copy"></use>
                         </svg>
-                        换肤
+                        <span slot="title">
+                          换肤
                       </span>
                     </el-menu-item>
-                    <el-menu-item index="after">
-                      <span slot="title">
+                    <el-menu-item index="next">
                         <svg class="icon" aria-hidden="true">
                           <use xlink:href="#cl-icon-shenghuo"></use>
                         </svg>
-                        后期计划
+                        <span slot="title">
+                          后期计划
                       </span>
                     </el-menu-item>
                 </el-menu>
@@ -316,7 +309,9 @@
     <el-main>
       <router-view></router-view>
     </el-main>
-    <el-footer>@Calamus 2017</el-footer>
+    <el-footer>
+      <a href="https://github.com/calamus0427" target="_blank">@Calamus</a> 2017
+      </el-footer>
   </el-container>
 </el-container>
 
