@@ -2,16 +2,20 @@
   <div >
     <el-tabs type="border-card">
       <el-tab-pane label="线形进度条 — 百分比外显">
-        <el-progress :percentage="0"></el-progress>
-        <el-progress :percentage="70"></el-progress>
-        <el-progress :percentage="100" status="success"></el-progress>
-        <el-progress :percentage="50" status="exception"></el-progress>
+        <div class="demo">
+          <el-progress :percentage="0"></el-progress>
+          <el-progress :percentage="70"></el-progress>
+          <el-progress :percentage="100" status="success"></el-progress>
+          <el-progress :percentage="50" status="exception"></el-progress>
+        </div>
       </el-tab-pane>
       <el-tab-pane label="线形进度条 — 百分比内显">
-        <el-progress :text-inside="true" :stroke-width="18" :percentage="0"></el-progress>
-        <el-progress :text-inside="true" :stroke-width="18" :percentage="70"></el-progress>
-        <el-progress :text-inside="true" :stroke-width="18" :percentage="100" status="success"></el-progress>
-        <el-progress :text-inside="true" :stroke-width="18" :percentage="50" status="exception"></el-progress>
+        <div class="demo">
+          <el-progress :text-inside="true" :stroke-width="18" :percentage="0"></el-progress>
+          <el-progress :text-inside="true" :stroke-width="18" :percentage="70"></el-progress>
+          <el-progress :text-inside="true" :stroke-width="18" :percentage="100" status="success"></el-progress>
+          <el-progress :text-inside="true" :stroke-width="18" :percentage="50" status="exception"></el-progress>
+        </div>
       </el-tab-pane>
       <el-tab-pane label="环形进度条">
         <el-progress type="circle" :percentage="0"></el-progress>
@@ -70,6 +74,25 @@
           </el-slider>
         </div>
       </el-tab-pane>
+      <el-tab-pane label="范围选择">
+        <div class="block">
+          <el-slider
+            v-model="value9"
+            range
+            show-stops
+            :max="10">
+          </el-slider>
+        </div>
+      </el-tab-pane>
+      <el-tab-pane label="竖向模式">
+        <div class="block">
+          <el-slider
+            v-model="value10"
+            vertical
+            height="200px">
+          </el-slider>
+        </div>
+      </el-tab-pane>
     </el-tabs>
   </div>
 </template>
@@ -86,6 +109,9 @@
         value6: 0,
         value7: 0,
         value8: 0,
+        value9: [4, 8],
+        value10: 0,
+
       }
     },
     methods: {
@@ -95,4 +121,21 @@
     }
   }
 </script>
+<style lang="scss" scoped>
+  .el-tabs+.el-tabs{
+    margin-top:50px;
+  }
+  // .demo{
+  //   border: 1px solid #ebebeb;
+  //   border-radius: 3px;
+  //   transition: .2s;
+  // }
+  .demo .el-progress--line {
+    // padding:25px;
+    display:block;
+    margin-bottom: 15px;
+    // width: 350px;
+}
+</style>
+
 
