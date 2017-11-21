@@ -30,6 +30,8 @@ import './components/search/search_input.js'
 import './components/canvas/canvas.js'
 //登录组件
 import "./components/login/login.js";
+//Echarts组件们
+// import "./components/echarts/histogram/demo1.js";
 
 
 
