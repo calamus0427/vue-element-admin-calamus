@@ -396,6 +396,7 @@ a{
 .el-footer{
   color:#7a7f8a;
   font-size:14px;
+  text-align:center;
 }
 .logup{
   float: right;
