@@ -4,7 +4,10 @@
   <cl-canvasBg :dotsNum="60" :isColor="true"></cl-canvasBg>
   <ul class="nav">
     <li>
-      <router-link to="/nav">element管理后台</router-link>
+      <router-link to="/introduce">element管理后台</router-link>
+    </li>
+    <li>
+      <router-link to="/nav">侧边栏</router-link>
     </li>
     <li>
       <router-link to="/blog">博客</router-link>
