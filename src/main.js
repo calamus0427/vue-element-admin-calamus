@@ -32,6 +32,8 @@ import './components/canvas/canvas.js'
 import "./components/login/login.js";
 //Echarts组件们
 // import "./components/echarts/histogram/demo1.js";
+// import "./components/echarts/histogram/demo2.js";
+
 
 
 
