@@ -63,6 +63,7 @@
     opacity: 0.75;
     line-height: 150px;
     margin: 0;
+    text-align:center;
   }
 
   .el-carousel__item:nth-child(2n) {

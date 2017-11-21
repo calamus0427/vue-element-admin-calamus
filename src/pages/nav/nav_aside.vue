@@ -2,13 +2,16 @@
 <el-container>
   <el-aside :width="width">
     <el-menu class="nav_aside el-menu-vertical-demo"
-    mode="vertical"
-    default-active="index"
-    @open="handleOpen"
-    @close="handleClose"
-    :collapse="isCollapse"
-    :unique-opened="true"
-    :router="true">
+      mode="vertical"
+      default-active="index"
+      @open="handleOpen"
+      @close="handleClose"
+      :collapse="isCollapse"
+      :unique-opened="true"
+      background-color="#545c64"
+      text-color="#fff"
+      active-text-color="#ffd04b"
+      :router="true">
       <el-menu-item index="introduce">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#cl-icon-Mousse"></use>
@@ -91,9 +94,15 @@
                             </el-menu-item>
                             <el-menu-item index="mark">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-haixiu"></use>
+                                <use xlink:href="#cl-icon-kiss-2"></use>
                               </svg>
                               标记
+                            </el-menu-item>
+                            <el-menu-item index="upload">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-haixiu"></use>
+                              </svg>
+                              上传文件
                             </el-menu-item>
                         </el-submenu>
                         <el-submenu index="1-2">

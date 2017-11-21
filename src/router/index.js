@@ -41,6 +41,7 @@ import mockNav from "../pages/mock/index"
 import markdown from "../pages/markdown/index"
 import vueAnimation from "../pages/animation/index"
 import blog from "../pages/blog/index";
+import upload from "../pages/upload/index";
 
 
 
@@ -133,6 +134,11 @@ export default new Router({
       path: '/Code500',
       name: 'Code500',
       component: Code500
+    },
+        {
+      path: '/upload',
+      name: "upload",
+      component: upload
     },
     {
       path: '/introduce',
