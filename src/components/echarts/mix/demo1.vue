@@ -4,6 +4,7 @@
 
 <script>
 import echarts from 'echarts'
+require('echarts/theme/dark') // echarts 主题
 
 export default {
   name:'demo1',
@@ -43,7 +44,7 @@ export default {
   },
   methods: {
     initChart() {
-      this.chart = echarts.init(document.getElementById(this.id))
+      this.chart = echarts.init(document.getElementById(this.id),'dark')
       const xData = (function() {
         const data = []
         for (let i = 1; i < 13; i++) {

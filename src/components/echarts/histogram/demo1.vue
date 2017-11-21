@@ -4,6 +4,7 @@
 
 <script>
 import echarts from 'echarts'
+require('echarts/theme/dark') // echarts 主题
 
 export default {
   name:'CLEhartsHistogram',
@@ -42,7 +43,7 @@ export default {
   },
   methods: {
     initChart() {
-      this.chart = echarts.init(document.getElementById(this.id))
+      this.chart = echarts.init(document.getElementById(this.id),'dark')
 
       const xAxisData = []
       const data = []
