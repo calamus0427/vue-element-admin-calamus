@@ -11,6 +11,15 @@ Object.keys(baseWebpackConfig.entry).forEach(function (name) {
   baseWebpackConfig.entry[name] = ['./build/dev-client'].concat(baseWebpackConfig.entry[name])
 })
 
+var lang = require("highlight.js-async-webpack/src/file.lang.hljs.js");
+var _entry = {
+  back_end: "./src/back-end/index.js", // 原始入口
+  vue: ["vue"]
+};
+for (var i = 0; i < lang.length; i++) {
+  _entry[lang[i]] = ["mavon-editor/dist/js/" + lang[i] + ".js"];
+}
+
 module.exports = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap })
