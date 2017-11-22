@@ -21,7 +21,7 @@
                     <el-submenu index="1">
                         <template slot="title">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-API"></use>
+                                <use xlink:href="#cl-icon-Cake"></use>
                               </svg>
                               <span slot="title">
                                 组件及API
@@ -30,77 +30,77 @@
                         <el-submenu index="1-1">
                             <span slot="title">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-jiatingyijianchongzhi"></use>
+                                <use xlink:href="#cl-icon-pangxie"></use>
                               </svg>
                               基本组件
                             </span>
                             <el-menu-item index="Carousel">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-suanzhang"></use>
+                                <use xlink:href="#cl-icon-Expression_35"></use>
                               </svg>轮播图
                             </el-menu-item>
                             <el-menu-item index="todolist">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-qinqin"></use>
+                                <use xlink:href="#cl-icon-Expression_34"></use>
                               </svg>
                                 todolist
                             </el-menu-item>
                             <el-menu-item index="iconNav">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-keai"></use>
+                                <use xlink:href="#cl-icon-Expression_33"></use>
                               </svg>ICON
                             </el-menu-item>
                             <el-menu-item index="table">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-deyi"></use>
+                                <use xlink:href="#cl-icon-Expression_32"></use>
                               </svg>
                               Table
                             </el-menu-item>
                             <el-menu-item index="form">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-ku"></use>
+                                <use xlink:href="#cl-icon-Expression_31"></use>
                               </svg>
                               Form
                             </el-menu-item>
                             <el-menu-item index="StarRating">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-daku"></use>
+                                <use xlink:href="#cl-icon-Expression_30"></use>
                               </svg>
                               星级评分
                             </el-menu-item>
                             <el-menu-item index="process">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-gongxifacai"></use>
+                                <use xlink:href="#cl-icon-Expression_29"></use>
                               </svg>
                               进度条
                             </el-menu-item>
                             <el-menu-item index="dataPiker">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-han"></use>
+                                <use xlink:href="#cl-icon-Expression_28"></use>
                               </svg>
                               时间选择器
                             </el-menu-item>
                             <el-menu-item index="backToTop">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-xiaoer"></use>
+                                <use xlink:href="#cl-icon-Expression_27"></use>
                               </svg>
                               返回顶部
                             </el-menu-item>
                             <el-menu-item index="permission">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-caimi"></use>
+                                <use xlink:href="#cl-icon-Expression_26"></use>
                               </svg>
                               权限
                             </el-menu-item>
                             <el-menu-item index="mark">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-kiss-2"></use>
+                                <use xlink:href="#cl-icon-Expression_25"></use>
                               </svg>
                               标记
                             </el-menu-item>
                             <el-menu-item index="upload">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-haixiu"></use>
+                                <use xlink:href="#cl-icon-Expression_24"></use>
                               </svg>
                               上传文件
                             </el-menu-item>
@@ -108,34 +108,34 @@
                         <el-submenu index="1-2">
                             <span slot="title">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-tushu1"></use>
+                                <use xlink:href="#cl-icon-lu"></use>
                               </svg>
                               文本编辑器
                             </span>
                             <el-menu-item index="richEditor">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-saodi"></use>
+                                <use xlink:href="#cl-icon-Expression_4"></use>
                               </svg>
                               富文本编辑器
                             </el-menu-item>
                             <el-menu-item index="markdownEditor">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-ganhuo"></use>
+                                <use xlink:href="#cl-icon-Expression_22"></use>
                               </svg>
                               Markdown编辑器
                             </el-menu-item>
                             <el-menu-item index="jsonEditor">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-jiaoshu"></use>
+                                <use xlink:href="#cl-icon-Expression_21"></use>
                               </svg>
-                              Json编辑器
+                              代码编辑器编辑器
                             </el-menu-item>
                         </el-submenu>
                     </el-submenu>
                     <el-submenu index="2">
                         <template slot="title">
                           <svg class="icon" aria-hidden="true">
-                              <use xlink:href="#cl-icon-xiugaicelve"></use>
+                              <use xlink:href="#cl-icon-Cup-icecream"></use>
                           </svg>
                           <span slot="title">
                             组件综合应用
@@ -143,44 +143,44 @@
                         </template>
                         <el-menu-item index="gallery">
                           <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#cl-icon-xiangji4"></use>
+                            <use xlink:href="#cl-icon-xinjian1"></use>
                           </svg>
                           画廊
                         </el-menu-item>
                         <el-menu-item index="music">
                           <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#cl-icon-luyin1"></use>
+                            <use xlink:href="#cl-icon-yiliao1"></use>
                           </svg>
                           音乐播放器
                           </el-menu-item>
                         <el-menu-item index="video">
                           <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#cl-icon-shipinzhongxin"></use>
+                            <use xlink:href="#cl-icon-sheyingyuluxiang"></use>
                           </svg>
                           视频播放器
                         </el-menu-item>
                         <el-menu-item index="vuePpt">
                           <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#cl-icon-ppt"></use>
+                            <use xlink:href="#cl-icon-xinjian1"></use>
                           </svg>
                           Vue-PPT入门介绍
                         </el-menu-item>
                         <el-menu-item index="navTable">
                           <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#cl-icon-word"></use>
+                            <use xlink:href="#cl-icon-Chocolate"></use>
                           </svg>
                           Vue项目基础表单
                         </el-menu-item>
                         <el-submenu index="2-1">
                             <span slot="title">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-youxi1"></use>
+                                <use xlink:href="#cl-icon-celveyouxi"></use>
                               </svg>
                               小游戏
                             </span>
                             <el-menu-item index="game">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-Sodawater"></use>
+                                <use xlink:href="#cl-icon-Croissant"></use>
                               </svg>
                               介绍
                             </el-menu-item>
@@ -190,7 +190,7 @@
                     <el-submenu index="3">
                         <template slot="title">
                             <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-shujushiti"></use>
+                                <use xlink:href="#cl-icon-Doughnut"></use>
                               </svg>
                               <span slot="title">
                               其他插件应用
@@ -205,13 +205,13 @@
                               </span>
                             <el-menu-item index="echartsInfo">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-bingzhuangtu"></use>
+                                <use xlink:href="#cl-icon-sandiantu"></use>
                               </svg>
                               介绍
                             </el-menu-item>
                             <el-menu-item index="echartsApp">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-shijieditu"></use>
+                                <use xlink:href="#cl-icon-xiangxiantu"></use>
                               </svg>
                               综合示例
                             </el-menu-item>
@@ -219,13 +219,13 @@
                         <el-submenu index="3-2">
                             <span slot="title">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-jingyu"></use>
+                                <use xlink:href="#cl-icon-Candy"></use>
                               </svg>
                               mock
                             </span>
                             <el-menu-item index="mockNav">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-xiongmao"></use>
+                                <use xlink:href="#cl-icon-Pizza"></use>
                               </svg>
                               介绍
                             </el-menu-item>
@@ -233,13 +233,13 @@
                         <el-submenu index="3-3">
                             <span slot="title">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-huli"></use>
+                                <use xlink:href="#cl-icon-Coffee"></use>
                               </svg>
                               Vue-markdown
                             </span>
                             <el-menu-item index="markdown">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-lu"></use>
+                                <use xlink:href="#cl-icon-Sandwich"></use>
                               </svg>
                               Markdown
                             </el-menu-item>
@@ -247,22 +247,36 @@
                         <el-submenu index="3-4">
                             <span slot="title">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-maotouying"></use>
+                                <use xlink:href="#cl-icon-Drink"></use>
                               </svg>
                               Vue-animation
                             </span>
                             <el-menu-item index="vueAnimation">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-lang"></use>
+                                <use xlink:href="#cl-icon-Macaron"></use>
                               </svg>
                               Vue-animation
+                            </el-menu-item>
+                        </el-submenu>
+                        <el-submenu index="3-5">
+                            <span slot="title">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-Lollipop"></use>
+                              </svg>
+                              Vue-codemirror
+                            </span>
+                            <el-menu-item index="jsonEditor">
+                              <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#cl-icon-Milkytea"></use>
+                              </svg>
+                              Vue-codemirror
                             </el-menu-item>
                         </el-submenu>
                     </el-submenu>
                     <el-submenu index="4">
                         <template slot="title">
                             <svg class="icon" aria-hidden="true">
-                              <use xlink:href="#cl-icon-houtaiweihu"></use>
+                              <use xlink:href="#cl-icon-Birthday-cake"></use>
                             </svg>
                             <span slot="title">
                               错误页面
@@ -271,13 +285,13 @@
                         <el-menu-item-group>
                             <el-menu-item index="Code404">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-emoji-15"></use>
+                                <use xlink:href="#cl-icon-Expression_23"></use>
                               </svg>
                               404页面
                             </el-menu-item>
                             <el-menu-item index="Code500">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-emoji-29"></use>
+                                <use xlink:href="#cl-icon-emoji-19"></use>
                               </svg>
                               500页面
                             </el-menu-item>
@@ -293,7 +307,7 @@
                     </el-menu-item>
                     <el-menu-item index="next">
                         <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#cl-icon-shenghuo"></use>
+                          <use xlink:href="#cl-icon-Bur-icecream"></use>
                         </svg>
                         <span slot="title">
                           后期计划
