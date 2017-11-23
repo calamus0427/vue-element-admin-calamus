@@ -26,10 +26,13 @@
 
 ## 基础功能
 - 登录
+
 ![image](./img/login.png)
 - 首页
+
 ![image](./img/index.png)
 - 基础组件们
+
 ![image](./img/nav.png)
 - echarts和vue的应用
 ![image](./img/echarts.png)
