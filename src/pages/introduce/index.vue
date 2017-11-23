@@ -1,5 +1,8 @@
 <template>
-  <div>
-    about me
+  <div class="bg">
+    Calamus
   </div>
 </template>
+
+
+

@@ -44,6 +44,7 @@
 ul li{
   list-style:none;
   text-decoration:none;
+  text-align:center;
 }
 ul{
   position: absolute;
