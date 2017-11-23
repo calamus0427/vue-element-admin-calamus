@@ -33,6 +33,8 @@ import "./components/login/login.js";
 //Echarts组件们
 // import "./components/echarts/histogram/demo1.js";
 // import "./components/echarts/histogram/demo2.js";
+//todolist组件
+import './components/todoList/todoList.js'
 
 
 

@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import CLtodolist from './todoList.vue';
+import CLtodolist from './index.vue';
 
 Vue.component('cl-todolist', CLtodolist);
 

@@ -1,5 +1,5 @@
 <template>
   <div>
-   todolist working!
+   <cl-todolist></cl-todolist>
   </div>
 </template>
