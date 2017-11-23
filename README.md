@@ -1,6 +1,6 @@
 # Vue Element 管理后台
 ## 项目运行
-### [在线预览](https://calamus0427.github.io/pages/myProject/vue-element-admin-cl/index.html)
+#### [在线预览](https://calamus0427.github.io/pages/myProject/vue-element-admin-cl/index.html#/login)
  安装依赖：npm install
 
  运行：npm run dev
@@ -26,14 +26,20 @@
 
 ## 基础功能
 - 登录
-![image](./img/index.png)
+![image](./img/login.png)
 - 首页
+![image](./img/index.png)
 - 基础组件们
-![image](./img/echarts.png)
+![image](http://note.youdao.com/favicon.ico)
 - echarts和vue的应用
+![image](./img/echarts.png)
 - vue富文本编辑器
+![image](./img/rich.png)
 - vuemarkdown编辑器
+![image](./img/markdown.png)
 - vue代码编辑器
+![image](./img/code.png)
 - vue音乐播放器（未完成）
 - vue视频播放器（未完成）
 - vue和localstorage实现todolist
+![image](./img/todolist.png)
