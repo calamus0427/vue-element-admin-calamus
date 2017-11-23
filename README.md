@@ -30,7 +30,7 @@
 - 首页
 ![image](./img/index.png)
 - 基础组件们
-![image](http://note.youdao.com/favicon.ico)
+![image](./img/nav.png)
 - echarts和vue的应用
 ![image](./img/echarts.png)
 - vue富文本编辑器
