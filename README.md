@@ -11,7 +11,6 @@
 ## 技术栈
 - vue
 - element
-- vue-markdown
 - vue-router
 - vue-markdown
 - echarts
