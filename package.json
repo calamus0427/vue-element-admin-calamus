@@ -86,6 +86,12 @@
     },
     "homepage": "https://github.com/calamus0427/vue-element-admin-calamus#readme",
     "keywords": [
-        "Calamus0427"
-    ]
+        "Calamus0427","ice-scaffold",
+    ],
+    "scaffoldConfig": {
+      "type": "vue",
+      "name": "ice-calamus-vue",
+      "title": "ice-calamus-vue",
+      "screenshot": "https://img.alicdn.com/tfs/TB1_bulmpOWBuNjy0FiXXXFxVXa-1920-1080.png"
+    }
 }
