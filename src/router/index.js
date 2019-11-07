@@ -36,7 +36,6 @@ import gallery from "../pages/gallery/index"
 import navTable from "../pages/navTable/index"
 import next from "../pages/next/index"
 import echartsInfo from "../pages/echarts/index"
-import echartsApp from "../pages/echarts/example"
 import mockNav from "../pages/mock/index"
 import markdown from "../pages/markdown/index"
 import vueAnimation from "../pages/animation/index"
@@ -58,8 +57,6 @@ import upload from "../pages/upload/index";
 
 
 
-// 引入子路由页面
-import example from '../pages/icon/demo_fontclass.vue'
 
 Vue.use(Router)
 
@@ -102,12 +99,12 @@ export default new Router({
       path: '/icon',
       name: 'icon',
       component: icon,
-      children:[
-        {path: 'example',
-        name: 'example',
-        component: example},
+      // children:[
+      //   {path: 'example',
+      //   name: 'example',
+      //   component: example},
 
-      ],
+      // ],
     },
     {
       path: '/nav',
@@ -222,13 +219,9 @@ export default new Router({
       name: "next",
       component: next
     },{
-      path: "/echartsInfo",
-      name: "echartsInfo",
+      path: "/echarts",
+      name: "echarts",
       component: echartsInfo
-    },{
-      path: "/echartsApp",
-      name: "echartsApp",
-      component: echartsApp
     },{
       path: "/mockNav",
       name: "mockNav",

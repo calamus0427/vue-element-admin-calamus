@@ -183,14 +183,14 @@ export default {
         window.addEventListener("mousemove", moveXY);
         window.addEventListener("click", addXY)
     },
+};
 
-}
 </script>
 <style>
-    #canvas{
-        position: fixed;
-        z-index: -1;
-        top: 0;
-        left: 0;
-    }
+#canvas {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
 </style>

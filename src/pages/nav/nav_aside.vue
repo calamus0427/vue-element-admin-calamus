@@ -196,82 +196,36 @@
                               其他插件应用
                           </span>
                         </template>
-                        <el-submenu index="3-1">
-                            <span slot="title">
-                              <svg class="icon" aria-hidden="true">
-                                  <use xlink:href="#cl-icon-zhuzhuangtu"></use>
-                                </svg>
-                                Echarts
-                              </span>
-                            <el-menu-item index="echartsInfo">
+                        <el-menu-item index="echarts">
                               <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#cl-icon-sandiantu"></use>
                               </svg>
-                              介绍
-                            </el-menu-item>
-                            <el-menu-item index="echartsApp">
-                              <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-xiangxiantu"></use>
-                              </svg>
-                              综合示例
-                            </el-menu-item>
-                        </el-submenu>
-                        <el-submenu index="3-2">
-                            <span slot="title">
-                              <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-Candy"></use>
-                              </svg>
-                              mock
-                            </span>
-                            <el-menu-item index="mockNav">
+                              echarts
+                        </el-menu-item>
+                        <el-menu-item index="mockNav">
                               <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#cl-icon-Pizza"></use>
                               </svg>
-                              介绍
-                            </el-menu-item>
-                        </el-submenu>
-                        <el-submenu index="3-3">
-                            <span slot="title">
-                              <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-Coffee"></use>
-                              </svg>
-                              Vue-markdown
-                            </span>
-                            <el-menu-item index="markdown">
+                              mock
+                        </el-menu-item>
+                        <el-menu-item index="markdownEditor">
                               <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#cl-icon-Sandwich"></use>
                               </svg>
-                              Markdown
-                            </el-menu-item>
-                        </el-submenu>
-                        <el-submenu index="3-4">
-                            <span slot="title">
-                              <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-Drink"></use>
-                              </svg>
-                              Vue-animation
-                            </span>
-                            <el-menu-item index="vueAnimation">
+                              Vue-Markdown
+                        </el-menu-item>
+                        <el-menu-item index="vueAnimation">
                               <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#cl-icon-Macaron"></use>
                               </svg>
                               Vue-animation
-                            </el-menu-item>
-                        </el-submenu>
-                        <el-submenu index="3-5">
-                            <span slot="title">
-                              <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#cl-icon-Lollipop"></use>
-                              </svg>
-                              Vue-codemirror
-                            </span>
-                            <el-menu-item index="jsonEditor">
+                        </el-menu-item>
+                        <el-menu-item index="jsonEditor">
                               <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#cl-icon-Milkytea"></use>
                               </svg>
                               Vue-codemirror
-                            </el-menu-item>
-                        </el-submenu>
+                        </el-menu-item>
                     </el-submenu>
                     <el-submenu index="4">
                         <template slot="title">
@@ -336,7 +290,7 @@
 
     </el-main>
     <el-footer>
-      <a href="https://github.com/calamus0427" target="_blank">@Calamus</a> 2017
+      <a href="https://github.com/calamus0427" target="_blank">@Calamus</a> 2016-2019
       </el-footer>
   </el-container>
 </el-container>
