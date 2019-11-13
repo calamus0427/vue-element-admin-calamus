@@ -26,12 +26,14 @@ export default {
     margin:0 auto ;
   }
   .chart_items{
+    display: inline-block;
+    position: relative;
     margin: 2em auto;
     border: 1px solid rgba(0,0,0,.1);
     border-radius: 8px;
     box-shadow: 0 0 45px rgba(0,0,0,.2);
     padding: 1.5em 2em;
-    width: calc(40vw + 4em);
+    min-width: calc(40vw + 4em);
   }
 </style>
 
